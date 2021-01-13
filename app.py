@@ -5,6 +5,7 @@ resorces -
     https://stackoverflow.com/questions/38055762/how-do-you-save-the-inputs-into-text-file
     https://www.quora.com/What-is-the-right-way-to-read-a-file-and-display-its-content-on-browser-using-flask
     https://www.kite.com/python/answers/how-to-erase-the-file-contents-of-a-text-file-in-python
+    https://medium.com/@tasnuva2606/dockerize-flask-app-4998a378a6aa
     
 '''
 
@@ -65,4 +66,4 @@ def clear_logs():
     return redirect(url_for('view_log'))
 
 if __name__ == "__main__":
-    app.run(debug=True, port=3000)
+    app.run(host='0.0.0.0', debug=True)
